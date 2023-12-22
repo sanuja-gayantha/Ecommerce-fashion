@@ -14,8 +14,10 @@ module.exports = {
       colors: {
         'primary': '#1e1e27',
         'secondery':'#b5aec4',
-        'ured':'#dc3545'
       },
+      backgroundImage:{
+        'hero-image': 'url("/assets/images/slide-6.jpg")',
+      }
     },
   },
   plugins: [],
