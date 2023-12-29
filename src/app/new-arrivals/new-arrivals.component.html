@@ -1,0 +1,15 @@
+<div class="new-arrivals-wrapper flex flex-col gap-10 mx-20 mt-20">
+    <span class="text-center text-5xl font-bold">New Arrivals</span>
+    <div class="categories flex flex-row gap-10 justify-center">
+        <span class="cursor-pointer hover:text-secondery" (click)="firstArrivalsByCategory('all')">ALL</span>
+        <span class="cursor-pointer hover:text-secondery" (click)="firstArrivalsByCategory('women')">WOMEN'S</span>
+        <span class="cursor-pointer hover:text-secondery" (click)="firstArrivalsByCategory('men')">MEN'S</span>
+        <span class="cursor-pointer hover:text-secondery" (click)="firstArrivalsByCategory('accessories')">ACCESSORIES</span>
+    </div>
+
+    <div class="items-grid flex flex-row flex-wrap gap-2 justify-center mt-10">
+        <app-card  *ngFor="let newArrival of newArrivalsList"
+        [cardItem]="newArrival"></app-card>
+    </div>
+</div>
+

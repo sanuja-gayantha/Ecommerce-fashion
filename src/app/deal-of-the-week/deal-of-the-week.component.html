@@ -1,0 +1,25 @@
+<div class="deal-of-the-week">
+
+    <div class="image">
+
+    </div>
+    <div class="details-container">
+        <div class="span"> Deal Of The Week</div>
+        <span class="before:content-['*'] before:text-purple-500 before:font-bold">free shipping on all US orders over $50</span>
+        <div class="counter">
+            <div class="timer" *ngIf="(timeLeft$ | async) as t; else sorry">
+                <h4> Count down timer </h4>
+                <span id="days"> {{t.daysToDday}} </span>Day(s)
+                <span id="hours"> {{t.hoursToDday}} </span>Hrs
+                <span id="minutes"> {{t.minutesToDday}} </span>Min
+                <span id="seconds"> {{t.secondsToDday}} </span>S
+            </div>
+            
+            <ng-template #sorry>
+                Sorry, something went wrong...
+            </ng-template>
+        </div>
+        <span></span>
+        <app-button [buttonText]="'SHOP NOW'"></app-button>
+    </div>
+</div>
