@@ -4,6 +4,7 @@ import { HeroComponent } from '../hero/hero.component';
 import { BenifitItemsComponent } from '../benifit-items/benifit-items.component';
 import { NewArrivalsComponent } from '../new-arrivals/new-arrivals.component';
 import { DealOfTheWeekComponent } from '../deal-of-the-week/deal-of-the-week.component';
+import { NewsletterComponent } from '../newsletter/newsletter.component';
 
 @Component({
   selector: 'app-home-page',
@@ -13,7 +14,8 @@ import { DealOfTheWeekComponent } from '../deal-of-the-week/deal-of-the-week.com
     HeroComponent,
     BenifitItemsComponent,
     NewArrivalsComponent,
-    DealOfTheWeekComponent
+    DealOfTheWeekComponent,
+    NewsletterComponent
     
   ],
   templateUrl: './home-page.component.html',
